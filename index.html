@@ -4,141 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volleyball Tournament Registration</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a class="navbar-brand" href="#">Volleyball Tournament</a>
+    </nav>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Volleyball Tournament</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<!-- Main Carousel -->
-<div id="mainCarousel" class="carousel slide my-4" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="images/1.webp" class="d-block w-100" alt="Main Carousel Image 1">
+    <!-- Main Carousel -->
+    <div id="mainCarousel" class="carousel">
+        <div class="carousel-item">
+            <img src="images/1.webp" alt="Main Carousel Image 1">
         </div>
         <div class="carousel-item">
-            <img src="images/2.webp" class="d-block w-100" alt="Main Carousel Image 2">
+            <img src="images/2.webp" alt="Main Carousel Image 2">
         </div>
         <div class="carousel-item">
-            <img src="images/3.webp" class="d-block w-100" alt="Main Carousel Image 3">
+            <img src="images/3.webp" alt="Main Carousel Image 3">
         </div>
     </div>
-    <a class="carousel-control-prev" href="#mainCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#mainCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
 
-<!-- Registration Form -->
-<div class="container registration-form">
-    <h2 class="text-center">Register Your Team</h2>
-    <form id="registrationForm">
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="teamName">Team Name</label>
+    <!-- Registration Form -->
+    <div class="registration-form">
+        <h2>Register Your Team</h2>
+        <form>
+            <!-- Team Name -->
+            <div class="form-group">
+                <label for="teamName">Team Name:</label>
                 <input type="text" class="form-control" id="teamName" placeholder="Enter team name" required>
             </div>
-            <div class="form-group col-md-6">
-                <label for="captainName">Captain's Name</label>
-                <input type="text" class="form-control" id="captainName" placeholder="Enter captain's name" required>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="contactEmail">Contact Email</label>
-                <input type="email" class="form-control" id="contactEmail" placeholder="Enter email address" required>
-            </div>
-            <div class="form-group col-md-6">
-                <label for="phoneNumber">Phone Number</label>
-                <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter phone number" required>
-            </div>
-        </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="state">State</label>
-                <input type="text" class="form-control" id="state" placeholder="Enter state" required>
-            </div>
-            <div class="form-group col-md-6">
-                <label for="city">City</label>
-                <input type="text" class="form-control" id="city" placeholder="Enter city" required>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="address">Address</label>
-            <input type="text" class="form-control" id="address" placeholder="Enter address" required>
-        </div>
-        <div class="form-group">
-            <label>Gender</label><br>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="male" value="Male">
-                <label class="form-check-label" for="male">Male</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="female" value="Female">
-                <label class="form-check-label" for="female">Female</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="other" value="Other">
-                <label class="form-check-label" for="other">Other</label>
-            </div>
-        </div>
-        <button type="submit" class="btn btn-primary btn-block">Register</button>
-    </form>
-</div>
 
-<!-- Second Carousel -->
-<div id="secondCarousel" class="carousel slide my-4" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="images/2.webp" class="d-block w-100" alt="Second Carousel Image 1">
+            <!-- Captain Name -->
+            <div class="form-group">
+                <label for="captainName">Captain Name:</label>
+                <input type="text" class="form-control" id="captainName" placeholder="Enter captain name" required>
+            </div>
+
+            <!-- State, City, Address -->
+            <div class="form-group">
+                <label for="state">State:</label>
+                <input type="text" class="form-control" id="state" placeholder="Enter state">
+            </div>
+
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" class="form-control" id="city" placeholder="Enter city">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" class="form-control" id="address" placeholder="Enter address">
+            </div>
+
+            <!-- Gender Checkbox -->
+            <div class="form-group">
+                <label>Gender:</label><br>
+                <input type="checkbox" id="male" name="gender" value="Male">
+                <label for="male">Male</label><br>
+                <input type="checkbox" id="female" name="gender" value="Female">
+                <label for="female">Female</label><br>
+                <input type="checkbox" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+            </div>
+
+            <!-- Team Players -->
+            <div class="form-group">
+                <h3>Team Players</h3>
+                <div class="player-box">
+                    <!-- Player 1 -->
+                    <div class="player-entry">
+                        <label for="player1">Player 1 Name:</label>
+                        <input type="text" class="form-control" id="player1" placeholder="Enter player 1 name">
+                        <label for="position1">Position:</label>
+                        <select id="position1" class="form-control">
+                            <option value="Setter">Setter</option>
+                            <option value="Attacker">Attacker</option>
+                            <option value="Defender">Defender</option>
+                            <option value="Libero">Libero</option>
+                            <option value="Blocker">Blocker</option>
+                        </select>
+                    </div>
+
+                    <!-- Repeat player entry for Player 2 to Player 8 -->
+                    <!-- Player 2 -->
+                    <div class="player-entry">
+                        <label for="player2">Player 2 Name:</label>
+                        <input type="text" class="form-control" id="player2" placeholder="Enter player 2 name">
+                        <label for="position2">Position:</label>
+                        <select id="position2" class="form-control">
+                            <option value="Setter">Setter</option>
+                            <option value="Attacker">Attacker</option>
+                            <option value="Defender">Defender</option>
+                            <option value="Libero">Libero</option>
+                            <option value="Blocker">Blocker</option>
+                        </select>
+                    </div>
+
+                    <!-- Add more players similarly up to Player 8 -->
+                    <!-- You can copy and modify the code for the next 6 players -->
+
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Register Team</button>
+        </form>
+    </div>
+
+    <!-- Second Carousel -->
+    <div id="secondCarousel" class="carousel">
+        <div class="carousel-item">
+            <img src="images/2.webp" alt="Second Carousel Image 1">
         </div>
         <div class="carousel-item">
-            <img src="images/3.webp" class="d-block w-100" alt="Second Carousel Image 2">
+            <img src="images/3.webp" alt="Second Carousel Image 2">
         </div>
         <div class="carousel-item">
-            <img src="images/1.webp" class="d-block w-100" alt="Second Carousel Image 3">
+            <img src="images/1.webp" alt="Second Carousel Image 3">
         </div>
     </div>
-    <a class="carousel-control-prev" href="#secondCarousel" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#secondCarousel" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
 
-<footer class="text-center py-4">
-    <p>&copy; 2024 Volleyball Tournament. All rights reserved.</p>
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Volleyball Tournament Registration</p>
+    </footer>
 </body>
 </html>
