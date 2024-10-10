@@ -1,29 +1,24 @@
 body {
     background-color: #f4f7fc;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* Changed the global font to Arial, you can choose another font if you prefer */
 }
 
 .navbar {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     background-color: #28a745;
-    padding: 15px;
 }
 
-.navbar .navbar-brand {
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
+.navbar .navbar-brand, .navbar-nav .nav-link {
+    color: #ffffff;
 }
 
 .carousel {
-    max-width: 70%;
-    margin: 20px auto;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .carousel-item img {
-    width: 100%;
-    height: 300px;
+    height: 400px;
     object-fit: cover;
 }
 
@@ -33,31 +28,32 @@ body {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    border: 3px solid #28a745;
+    max-width: 700px;
+    background-color: #007bff;
+    color: white;
+    
+    /* Added border */
+    border: 3px solid #28a745; /* Green border, change color as needed */
+    font-family: 'Verdana', sans-serif; /* Changed font for the form */
 }
 
-h2, h3 {
+h2 {
     margin-bottom: 20px;
-    color: #007bff;
-    font-family: 'Georgia', serif;
+    color: white;
+    font-family: 'Georgia', serif; /* Changed font of headings */
 }
 
 .form-control {
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 20px;
-    width: 100%;
+    border-radius: 0;
+    font-family: 'Verdana', sans-serif; /* Applied a new font to form input fields */
 }
 
 .btn-primary {
     background-color: #ffc107;
     border-color: #ffc107;
     color: black;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
+    font-family: 'Verdana', sans-serif; /* Font for the submit button */
 }
 
 .btn-primary:hover {
@@ -68,30 +64,10 @@ h2, h3 {
 footer {
     background-color: #007bff;
     color: white;
-    padding: 10px;
-    text-align: center;
-    margin-top: 40px;
-}
-
-/* Player Entry Box */
-.player-box {
     padding: 20px;
-    background-color: #f9f9f9;
-    border: 2px solid #007bff;
-    border-radius: 8px;
 }
 
-.player-entry {
-    margin-bottom: 15px;
-}
-
-.player-entry label {
-    font-weight: bold;
-}
-
-.player-entry input, .player-entry select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
+footer p {
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Footer font */
 }
