@@ -26,6 +26,8 @@ body {
     max-width: 700px;
     background-color: #007bff; /* Light blue background for the form */
     color: white;
+    border: 3px solid #24a745
+    font_family: "verdana
 }
 
 h2 {
