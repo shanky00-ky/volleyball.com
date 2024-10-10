@@ -1,19 +1,24 @@
 body {
     background-color: #f4f7fc;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; /* Changed the global font to Arial, you can choose another font if you prefer */
 }
 
 .navbar {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    background-color: #28a745; /* Changed to green for a vibrant look */
+    background-color: #28a745;
 }
 
 .navbar .navbar-brand, .navbar-nav .nav-link {
     color: #ffffff;
 }
 
+.carousel {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
 .carousel-item img {
-    height: 500px;
+    height: 400px;
     object-fit: cover;
 }
 
@@ -24,26 +29,31 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     max-width: 700px;
-    background-color: #007bff; /* Light blue background for the form */
+    background-color: #007bff;
     color: white;
-    border: 3px solid #24a745
-    font_family: "verdana
+    
+    /* Added border */
+    border: 3px solid #28a745; /* Green border, change color as needed */
+    font-family: 'Verdana', sans-serif; /* Changed font for the form */
 }
 
 h2 {
     margin-bottom: 20px;
     color: white;
+    font-family: 'Georgia', serif; /* Changed font of headings */
 }
 
 .form-control {
     border-radius: 0;
+    font-family: 'Verdana', sans-serif; /* Applied a new font to form input fields */
 }
 
 .btn-primary {
-    background-color: #ffc107; /* Yellow for more contrast */
+    background-color: #ffc107;
     border-color: #ffc107;
     color: black;
     transition: background-color 0.3s, border-color 0.3s;
+    font-family: 'Verdana', sans-serif; /* Font for the submit button */
 }
 
 .btn-primary:hover {
@@ -59,4 +69,5 @@ footer {
 
 footer p {
     margin: 0;
+    font-family: 'Arial', sans-serif; /* Footer font */
 }
